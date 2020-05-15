@@ -1,13 +1,280 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  --text-primary: #0B4141;
+  --text-secondary: #7DA2A9;
+  --text-third: #FF6864;
+  --text-4: #fbfbfb;
+  --bg-primary: #fbfbfb;
+  --bg-secondary: #7DA2A9;
+  --bg-third: #FF6864;
+  --transition-speed: 600ms;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.5fr 2fr;
+  line-height: 1.5rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Left side of the page - AboutMe.js */
+
+.left {
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  padding: 2rem;
+}
+.font-Monika {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+.my-picture {
+  border-radius: 50%;
+  height: 26vh;
+  padding: 1rem 0;
+}
+
+/* All icons - Even icons from pictures */
+.icons {
+  color: var(--text-secondary);
+}
+.icons:hover {
+  color: var(--text-third);
+}
+.icon-img {
+  filter: invert(60%) sepia(43%) saturate(195%) hue-rotate(142deg) brightness(94%) contrast(88%);
+}
+.icon-img:hover {
+  filter: invert(49%) sepia(8%) saturate(3786%) hue-rotate(314deg) brightness(113%) contrast(101%);
+}
+.icons-grid {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: repeat(auto-fit, 3rem);
+  column-gap: 1rem;
+  /* repeat(auto-fit, minmax(260px, 1fr)) */
+  /* border: solid 1px black; */
+  justify-content: center;
+  justify-items: center;
+  align-self: center;
+}
+
+/* Right side of the page - MainNav.js, SideNav, CvNav and Content */
+
+.right {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto auto 1fr;
+  gap: 1rem 0;
+  grid-template-areas:  "MainNav  Content"
+                        "Cv       Content"
+                        "SideNav  Content";
+}
+.mainav {
+  grid-area: MainNav;
+  background-color: var(--bg-secondary);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px; 
+  padding: 2rem 0;
+}
+.sidenav {
+  grid-area: SideNav;
+  background-color: var(--bg-secondary);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-top: 2rem;
+}
+.cv {
+  grid-area: Cv;
+  border-radius: 5px !important;
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--bg-third);
+  border: var(--bg-third) 1px solid;
+  color: var(--text-4) !important;
+  position: relative;
+  overflow: hidden;
+  
+}
+.cv:hover {
+  background-color: var(--bg-primary);
+  color: var(--text-third) !important;
+  transition: all 500ms ease-Out;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+.cv-circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  position: absolute;
+  transition: all 600ms ease-Out;
+  top: 50%;
+  left: 50%;
+}
+.cv:hover .cv-circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -100px;
+  left: -100px;
+}
+.cv:hover h3 {
+  color: var(--text-third);
+  z-index: 2;
+  position: relative;
+}
+.content {
+  grid-area: Content;
+  padding: 3rem 2rem;
+  background-color: var(--bg-primary);
+}
+
+/* Navbar selection */
+li .selected {
+  padding: 1rem;
+}
+.selected:hover {
+  background-color: var(--bg-secondary);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+/* Content editing */
+
+.img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10);
+}
+.img-greece {
+  width: 50ch;
+  border-radius: 5px;
+}
+.img-udemy {
+  width: 35vh;
+}
+.img-toraberu2 {
+  height: 35vh;
+}
+a .pb:hover {
+  filter: invert(49%) sepia(8%) saturate(3786%) hue-rotate(314deg) brightness(113%) contrast(101%);
+}
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+/* Button - from white to red */
+
+.button {
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+  border: var(--bg-third) 1px solid;
+  color: var(--text-third) !important;
+  position: relative;
+  overflow: hidden;
+  transition: all 500ms ease-Out;
+}
+.button-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+.button:hover {
+  transition: all 500ms ease-in-out;
+  color: var(--text-4) !important;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+.circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  border-radius: 50%;
+  background: var(--bg-third);
+  position: absolute;
+  transition: all 600ms ease-Out;
+  top: 50%;
+  left: 50%;
+}
+.button:hover .circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+.button:hover span {
+  color: var(--text-4);
+  z-index: 2;
+  position: relative;
+}
+
+/* Carousel flickity - using slider.js*/
+
+.carousel-container {
+  padding-top: 1rem;
+  width: 90%;
+  margin: auto;
+}
+.carousel {
+  width: 50%;
+  height: 27vh;
+  padding: 1rem;
+  background-color: var(--bg-primary);
+}
+.carousel-cell {
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+.flickity-page-dots {
+  bottom: 0 !important;
+}
+.carousel-square {
+  height: 100%;
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Accordion */
+.accor {
+  transition: 0.5s;
+  padding-left: 1rem;
+}
+.accor-head {
+  padding: 0 0.2rem 0.5rem 0.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.accor-head:hover {
+  color: var(--text-third);
+}
+.accor-body {
+  background: var(--bg-primary);
+  max-height: 0;
+  overflow: hidden;
+  transition: 300ms ease-in-out;
+}
+.accor-img {
+  width: 30vh;
+  
+}
+.active > .accor-body {
+  padding: 0.2rem 20px;
+  max-height: 600px;
+}
+.active > .accor-head {
+  font-weight: bold !important;
+  color: var(--text-third);
+  border-bottom: 3px solid var(--bg-third);
 }
