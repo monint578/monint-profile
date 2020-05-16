@@ -30,8 +30,8 @@ const ProjectProgress = () => {
             <hr />
             <h3 className="center bold">Technologies which I will use for this project</h3>
             <div className="center icons-grid">
-                <div className="icon-size"><img src="/img/Golang.png" className="icon-optional" alt="" /></div>
-                <div className="icon-size"><img src="/img/postgresql.png" className="icon-optional" alt=""/></div>
+                <div className="icon-size"><img src="/img/Golang.png" className="icon-img" alt="" /></div>
+                <div className="icon-size"><img src="/img/postgresql.png" className="icon-img" alt=""/></div>
                 <i className="fab fa-react icons fa-3x"></i>
                 <i className="fab fa-figma icons fa-3x"></i>
                 <i className="fab fa-docker icons fa-3x"></i>

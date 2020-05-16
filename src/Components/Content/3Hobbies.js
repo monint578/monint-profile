@@ -7,10 +7,11 @@ const images = ["/img/minty1.png", "/img/minty2.png", "/img/minty3.png"];
 const Hobbies = () => {
   return (
     <div>
+      <h1 className="center pb">Things I love to do</h1>
         <Accordion>
           <div className="accor active">
             <div className="accor-head" >
-                <h2 className="center">Planning</h2>
+                <h3>Planning</h3>
             </div>
             <div className="accor-body">
                 <p>
@@ -20,9 +21,9 @@ const Hobbies = () => {
                 </p>
             </div>
           </div>
-          <div className="accor active">
-            <div className="accor-head">
-                <h2 className="center pt">Hand-made crafting</h2>
+          <div className="accor">
+            <div className="accor-head pt-sm">
+                <h3>Hand-made crafting</h3>
             </div>
             <div className="accor-body">
                 <p>
@@ -51,8 +52,8 @@ const Hobbies = () => {
             </div>
           </div>
           <div className="accor">
-            <div className="accor-head">
-                <h2 className="center pt">Organizing untradtional things</h2>
+            <div className="accor-head pt-sm">
+                <h3>Organizing untradtional things</h3>
             </div>
             <div className="accor-body">
                 <p>Like dnd </p>

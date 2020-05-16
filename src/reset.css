@@ -429,3 +429,6 @@ hr {
 .pt {
     padding-top: 1rem;
 }
+.pt-sm {
+    padding-top: 0.5rem;
+}

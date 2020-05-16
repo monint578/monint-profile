@@ -8,7 +8,7 @@ const Work = () => {
       <h2 className="pt">Sales sector</h2>
       <Accordion>
         <div className="accor active">
-          <div className="accor-head">Promotional Representative<span> / UAB “Partizanas”</span><p className="light">2018 07 - 2019 11</p></div>
+          <div className="accor-head pt-sm">Promotional Representative<span> / UAB “Partizanas”</span><p className="light">2018 07 - 2019 11</p></div>
           <div className="accor-body">
             <p>- Various product promotion and presentation</p>
             <p>- Company representation</p>
@@ -18,7 +18,7 @@ const Work = () => {
     <h2 className="pt">Textile manufacturing sector</h2>
     <Accordion>
         <div className="accor">
-          <div className="accor-head">Sales Manager<span> / UAB “Garlita” knitting manufacturer</span><p className="light">2019 05 - 07</p></div>
+          <div className="accor-head pt-sm">Sales Manager<span> / UAB “Garlita” knitting manufacturer</span><p className="light">2019 05 - 07</p></div>
           <div className="accor-body">
             <p>Working with semi-regular knitting products:</p>
             <p>- Consulting clients and taking orders for manufacturing step by
@@ -30,7 +30,7 @@ const Work = () => {
           </div>
         </div>
         <div className="accor">
-          <div className="accor-head">Deputy to sewing manager<span> / UAB “Garlita” knitting manufacturer</span><p className="light">2019 04 - 05</p></div>
+          <div className="accor-head pt-sm">Deputy to sewing manager<span> / UAB “Garlita” knitting manufacturer</span><p className="light">2019 04 - 05</p></div>
           <div className="accor-body">
             <p>Working with semi-regular knitting manufacturing and sewing:</p>
             <p>- Organizing knitwear accessories for the manufacturing process</p>
@@ -39,7 +39,7 @@ const Work = () => {
           </div>
         </div>
         <div className="accor">
-          <div className="accor-head">Intern<span> / UAB “Garlita” knitting manufacturer</span><p className="light">2019 02 - 04</p></div>
+          <div className="accor-head pt-sm">Intern<span> / UAB “Garlita” knitting manufacturer</span><p className="light">2019 02 - 04</p></div>
           <div className="accor-body">
             <p>
             I was interning in knitting manufacturing while writing my Bachelor's
@@ -49,7 +49,7 @@ const Work = () => {
           </div>
         </div>
         <div className="accor">
-          <div className="accor-head">Administrator of the weaving manufacturing<span> / UAB “Liningas” weaving manufacturer</span><p className="light">2017 06-07</p></div>
+          <div className="accor-head pt-sm">Administrator of the weaving manufacturing<span> / UAB “Liningas” weaving manufacturer</span><p className="light">2017 06-07</p></div>
           <div className="accor-body">
             <p>
             Working in weaving manufacturing and administrative tasks in my second
@@ -61,7 +61,7 @@ const Work = () => {
           </div>
         </div>
         <div className="accor">
-          <div className="accor-head">Knitting manufacturing assistance<span> / UAB “Omniteksas” knitting manufacturer</span><p className="light">2016 07 - 08</p></div>
+          <div className="accor-head pt-sm">Knitting manufacturing assistance<span> / UAB “Omniteksas” knitting manufacturer</span><p className="light">2016 07 - 08</p></div>
           <div className="accor-body">
             <p>Working in knitting manufacturing in my first student year:</p>
             <p>- Making knitting samples for customers</p>

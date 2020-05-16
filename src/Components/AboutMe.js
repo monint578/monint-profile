@@ -3,8 +3,8 @@ import React from "react";
 const AboutMe = () => {
   return (
     <div className="left">
-      <div className="center">
-        <img className="my-picture" src="/img/download.png" alt="" />
+      <div className="center picture-container">
+        <img className="picture" src="/img/download.png" alt="" />
       </div>
       <h3>HELLO</h3>
       <h2 className="font-Monika">I'm Monika</h2>

@@ -31,16 +31,16 @@ const Education = () => {
             </div>
           </div>
           <div className="accor active">
-            <div className="accor-head">
+            <div className="accor-head pt-sm">
               <h3>Student exchange program “Exasmus+”</h3>
               <p className="light">2018 02 - 07</p>
             </div>
-            <div className="accor-body">
+            <div className="accor-body content-grid">
               <p>
                 Studied one semester abroad at the University of West Attica in
                 Greece
               </p>
-              <div className="img-greece pt"><img src="/img/greece.jpg" alt="" className="img"/></div>
+              <div className="accor-img-rec pt-sm"><img src="/img/greece.jpg" alt="" className="img"/></div>
               <img src="" alt=""/>
             </div>
           </div>

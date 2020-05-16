@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import MainNav from "./Components/MainNav";
 import CvNav from "./Components/CvNav";
 import Content from "./Components/Content";
-import { BrowserRouter, Route} from "react-router-dom";
 import SideNav1 from "./Components/SideNav1";
 import SideNav2 from "./Components/SideNav2";
 import SideNav3 from "./Components/SideNav3";
@@ -15,6 +14,9 @@ import Other2 from "./Components/Content/2OtherProjects";
 import Activities from "./Components/Content/1Activities";
 import Education from "./Components/Content/1Education";
 import Hobbies from "./Components/Content/3Hobbies";
+
+import { BrowserRouter, Route} from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 class Info extends Component {
   render() {

@@ -31,11 +31,11 @@ const ProfilePage = () => {
             </div>
             <hr />
             <div className="button-flex">
-                <a className="button" href="#" rel="noopener noreferrer" target="_blank">
+                <a className="button" href="https://github.com/monint578/monint-profile" rel="noopener noreferrer" target="_blank">
                 <span>Profile Page GitHub <i class="fab fa-github"></i></span>
                 <div className="circle"></div>
                 </a>
-                <a className="button" href="https://github.com/monint578/toraberu" rel="noopener noreferrer" target="_blank">
+                <a className="button" href="https://www.figma.com/file/QwJyo456KGGctPDtBjfhIe/Untitled?node-id=1%3A196" rel="noopener noreferrer" target="_blank">
                 <span>Profile Page Figma <i class="fab fa-figma"></i></span>
                 <div className="circle"></div>
                 </a>
