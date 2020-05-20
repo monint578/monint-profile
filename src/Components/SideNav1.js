@@ -5,27 +5,30 @@ const SideNav1 = () => {
   return (
     <div>
       <ul>
-        <li className="">
-          <NavLink className="NavLink selected" to="/about/work-experience">
-            <h2>Work experience</h2>
+        <li className="mobile-navlink">
+          <NavLink className="NavLink selected" activeClassName="is-active" to="/about/work-experience">
+            <h2 className="smaller-text">Work experience</h2>
           </NavLink>
         </li>
-        <li className="">
-          <NavLink className="NavLink selected" to="/about/education">
-            <h2>Education</h2>
+        <li className="mobile-navlink">
+          <NavLink className="NavLink selected" activeClassName="is-active" to="/about/education">
+            <h2 className="smaller-text">Education</h2>
           </NavLink>
         </li>
-        <li className="">
-          <NavLink className="NavLink selected" to="/about/activities">
-            <h2>Activities</h2>
+        <li className="mobile-navlink">
+          <NavLink className="NavLink selected" activeClassName="is-active" to="/about/activities">
+            <h2 className="smaller-text">Activities</h2>
           </NavLink>
         </li>
-        <li className="">
-          <NavLink className="NavLink selected" to="/about/hobbies">
-            <h2>Hobbies</h2>
+        <li className="mobile-navlink">
+          <NavLink className="NavLink selected" activeClassName="is-active" to="/about/other">
+            <h2 className="smaller-text">Things I love to do</h2>
           </NavLink>
         </li>
       </ul>
+      <div className="show-for-mobile">
+        <hr />
+      </div>
     </div>
   );
 };

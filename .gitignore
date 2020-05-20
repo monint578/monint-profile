@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 /public/img
+monika_intaite_eng.pdf
+favicon.ico
+manifest.json
 
 # testing
 /coverage

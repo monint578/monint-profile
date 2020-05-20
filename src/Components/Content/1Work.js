@@ -3,22 +3,15 @@ import Accordion from "../Accordion";
 
 const Work = () => {
   return (
-    <div>
-      <h1 className="center">Work experience</h1>
-      <h2 className="pt">Sales sector</h2>
-      <Accordion>
-        <div className="accor active">
-          <div className="accor-head pt-sm">Promotional Representative<span> / UAB “Partizanas”</span><p className="light">2018 07 - 2019 11</p></div>
-          <div className="accor-body">
-            <p>- Various product promotion and presentation</p>
-            <p>- Company representation</p>
-          </div>
-        </div>
-    </Accordion>
-    <h2 className="pt">Textile manufacturing sector</h2>
+    <div className="full-height">
+      <h1 className="center smaller-text">Work experience</h1>
+      <h2 className="pt smaller-text-color">Textile manufacturing sector</h2>
     <Accordion>
-        <div className="accor">
-          <div className="accor-head pt-sm">Sales Manager<span> / UAB “Garlita” knitting manufacturer</span><p className="light">2019 05 - 07</p></div>
+        <div className="accor active">
+          <div className="accor-head pt-sm">
+            <p>Sales Manager / UAB “Garlita” knitting manufacturer</p>
+            <p className="light">2019 05 - 07</p>
+          </div>
           <div className="accor-body">
             <p>Working with semi-regular knitting products:</p>
             <p>- Consulting clients and taking orders for manufacturing step by
@@ -30,7 +23,10 @@ const Work = () => {
           </div>
         </div>
         <div className="accor">
-          <div className="accor-head pt-sm">Deputy to sewing manager<span> / UAB “Garlita” knitting manufacturer</span><p className="light">2019 04 - 05</p></div>
+          <div className="accor-head pt-sm">
+            <p>Deputy to sewing manager / UAB “Garlita” knitting manufacturer</p>
+            <p className="light">2019 04 - 05</p>
+          </div>
           <div className="accor-body">
             <p>Working with semi-regular knitting manufacturing and sewing:</p>
             <p>- Organizing knitwear accessories for the manufacturing process</p>
@@ -39,7 +35,10 @@ const Work = () => {
           </div>
         </div>
         <div className="accor">
-          <div className="accor-head pt-sm">Intern<span> / UAB “Garlita” knitting manufacturer</span><p className="light">2019 02 - 04</p></div>
+          <div className="accor-head pt-sm">
+            <p>Intern / UAB “Garlita” knitting manufacturer</p>
+            <p className="light">2019 02 - 04</p>
+          </div>
           <div className="accor-body">
             <p>
             I was interning in knitting manufacturing while writing my Bachelor's
@@ -49,7 +48,10 @@ const Work = () => {
           </div>
         </div>
         <div className="accor">
-          <div className="accor-head pt-sm">Administrator of the weaving manufacturing<span> / UAB “Liningas” weaving manufacturer</span><p className="light">2017 06-07</p></div>
+          <div className="accor-head pt-sm">
+            <p>Administrator of the weaving manufacturing / UAB “Liningas” weaving manufacturer</p>
+            <p className="light">2017 06-07</p>
+          </div>
           <div className="accor-body">
             <p>
             Working in weaving manufacturing and administrative tasks in my second
@@ -61,7 +63,10 @@ const Work = () => {
           </div>
         </div>
         <div className="accor">
-          <div className="accor-head pt-sm">Knitting manufacturing assistance<span> / UAB “Omniteksas” knitting manufacturer</span><p className="light">2016 07 - 08</p></div>
+          <div className="accor-head pt-sm">
+            <p>Knitting manufacturing assistance / UAB “Omniteksas” knitting manufacturer</p>
+            <p className="light">2016 07 - 08</p>
+          </div>
           <div className="accor-body">
             <p>Working in knitting manufacturing in my first student year:</p>
             <p>- Making knitting samples for customers</p>
@@ -69,6 +74,19 @@ const Work = () => {
           </div>
         </div>
       </Accordion>
+      <h2 className="pt smaller-text-color">Sales sector</h2>
+      <Accordion>
+        <div className="accor">
+          <div className="accor-head pt-sm">
+            <p>Promotional Representative / UAB “Partizanas”</p>
+            <p className="light">2018 07 - 2019 11</p>
+          </div>
+          <div className="accor-body">
+            <p>- Various product promotion and presentation</p>
+            <p>- Company representation</p>
+          </div>
+        </div>
+    </Accordion>
     </div>
   );
 };

@@ -2,18 +2,18 @@ import React from "react";
 import Slider from "../Slider";
 
 const images = [ 
-    "/img/toraberu2.png",
-    "/img/toraberu3.png",
-    "/img/toraberu4.png"
+    "/img/profile1.png",
+    "/img/profile2.png",
+    "/img/profile3.png"
 ];
 
 const ProfilePage = () => {
     return ( 
-        <div>
+        <div className="full-height">
             <a href="#" rel="noopener noreferrer" target="_blank">
-                <h1 className="center pb">My Profile Page</h1>
+                <h1 className="center pb smaller-text">My Profile Page</h1>
             </a>
-            <h3>I think I don't need to writte about what you can see in this page. You can see everything you need to know about this page. I wanted to lear React so this is the result. Also I used figma for web-design</h3>
+            <h3 className="smaller-text">This is the page you are currently viewing! It was created with React because I wanted to learn it. I have also used Figma to design this website.</h3>
             <div className="carousel-container">
                 <Slider
                     options={{
@@ -32,11 +32,11 @@ const ProfilePage = () => {
             <hr />
             <div className="button-flex">
                 <a className="button" href="https://github.com/monint578/monint-profile" rel="noopener noreferrer" target="_blank">
-                <span>Profile Page GitHub <i class="fab fa-github"></i></span>
+                <span>Profile Page GitHub <i className="fab fa-github"></i></span>
                 <div className="circle"></div>
                 </a>
                 <a className="button" href="https://www.figma.com/file/QwJyo456KGGctPDtBjfhIe/Untitled?node-id=1%3A196" rel="noopener noreferrer" target="_blank">
-                <span>Profile Page Figma <i class="fab fa-figma"></i></span>
+                <span>Profile Page Figma <i className="fab fa-figma"></i></span>
                 <div className="circle"></div>
                 </a>
             </div>

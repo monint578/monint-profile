@@ -6,59 +6,57 @@ const images = ["/img/minty1.png", "/img/minty2.png", "/img/minty3.png"];
 
 const Hobbies = () => {
   return (
-    <div>
-      <h1 className="center pb">Things I love to do</h1>
-        <Accordion>
-          <div className="accor active">
-            <div className="accor-head" >
-                <h3>Planning</h3>
-            </div>
-            <div className="accor-body">
-                <p>
-                    I don't know about other, but I Love planning even the smallest things.
-                    I always making small todo list for maisto prekes or even day plan. I
-                    thinks that why I started using Figma, because miau miau miau. Biudzeto apzvalga per exel
-                </p>
+    <div className="full-height">
+      <h1 className="center pb smaller-text">Things I love to do</h1>
+      <Accordion>
+        <div className="accor active">
+          <div className="accor-head pt-sm">
+            <h3 className="smaller-text-ed">Hand-made crafting</h3>
+          </div>
+          <div className="accor-body">
+            <p>
+              My favorite thing to do is create something new from scratch. A
+              few years ago I started making jewelry from liquid resin and
+              storing precious memories forever. I even started my jewelry store
+              Minty. I also design and sew clothes for myself and my friends.
+            </p>
+            <div className="carousel-container">
+              <Slider
+                options={{
+                  draggable: ">1",
+                  wrapAround: true,
+                  groupCells: true,
+                  autoPlay: "6500",
+                }}
+              >
+                {images.map((image, index) => (
+                  <div className="carousel" key={index}>
+                    <img src={image} alt="" className="carousel-cell" />
+                  </div>
+                ))}
+              </Slider>
             </div>
           </div>
-          <div className="accor">
-            <div className="accor-head pt-sm">
-                <h3>Hand-made crafting</h3>
-            </div>
-            <div className="accor-body">
-                <p>
-                    I cant call it gyvenimo pasaukimu, but I really like crafting or making
-                    something. I have hude closet there are a lot of things for designing
-                    clothers, sewing them. Also I started my jewelry shop, there i was
-                    making jewelries from resin material. Minty- jewelries; Designing and
-                    sewing clothes;
-                </p>
-                <div className="carousel-container">
-                    <Slider
-                    options={{
-                        draggable: ">1",
-                        wrapAround: true,
-                        groupCells: true,
-                        autoPlay: "6500",
-                    }}
-                    >
-                    {images.map((image, index) => (
-                        <div className="carousel" key={index}>
-                        <img src={image} alt="" className="carousel-cell" />
-                        </div>
-                    ))}
-                    </Slider>
-                </div>
-            </div>
+        </div>
+        <div className="accor active">
+          <div className="accor-head pt-sm">
+            <h3 className="smaller-text-ed">Planning and Organizing</h3>
           </div>
-          <div className="accor">
-            <div className="accor-head pt-sm">
-                <h3>Organizing untradtional things</h3>
-            </div>
-            <div className="accor-body">
-                <p>Like dnd </p>
-            </div>
+          <div className="accor-body">
+            <p>
+              I‘m not sure about others, but I love planning even the smallest
+              things, as I think it‘s the most productive way to achieve my
+              goals. I even created a step-by-step plan for this very website!
+            </p>
+            <p>
+              Since becoming a member of my student association, I got even more
+              responsibilities, like organizing small to large events, which
+              became my habit. Now I organize activities with my friends, like
+              field trips, game nights (we love D&D!) and I‘ve made some escape
+              rooms in my garage!
+            </p>
           </div>
+        </div>
       </Accordion>
     </div>
   );
