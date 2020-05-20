@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   :root {
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
@@ -162,6 +162,7 @@
 
   /* Navbar selection */
 
+
   li .selected {
     padding: 1rem;
   }
@@ -309,6 +310,7 @@
   .accor-head {
     padding: 0 0.2rem 0.5rem 0.2rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
   }
   .accor-head:hover {
     color: var(--text-third);
@@ -345,7 +347,7 @@
     line-height: 1.5rem;
   }
 }
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
+@media only screen and (max-width: 1023px) and (min-width: 769px) {
   .container {
     background-color: var(--bg-primary);
     color: var(--text-primary);

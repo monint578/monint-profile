@@ -10,9 +10,7 @@ const images = [
 const ProfilePage = () => {
     return ( 
         <div className="full-height">
-            <a href="#" rel="noopener noreferrer" target="_blank">
-                <h1 className="center pb smaller-text">My Profile Page</h1>
-            </a>
+            <h1 className="center pb smaller-text">My Profile Page</h1>
             <h3 className="smaller-text">This is the page you are currently viewing! It was created with React because I wanted to learn it. I have also used Figma to design this website.</h3>
             <div className="carousel-container">
                 <Slider

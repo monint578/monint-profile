@@ -14,7 +14,7 @@ class Accordion extends React.Component {
       const acc = this._acc.children;
       for (let i = 0; i < acc.length; i++) {
         let a = acc[i];
-        a.onclick = () => a.classList.toggle("active");
+        a.children[0].onclick = () => a.classList.toggle("active");
       }
     }
     

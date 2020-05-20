@@ -438,3 +438,7 @@ hr {
 .pl-sm {
     padding-left: 0.5rem;
 }
+
+a:focus, .NavLink:focus {
+    outline: none !important;
+}

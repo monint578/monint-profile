@@ -16,7 +16,7 @@ const AboutMe = () => {
       <h3 className="center bold">Contact me!</h3>
       <div className="center icons-grid-sm pt-sm">
         <a href="https://www.linkedin.com/in/monint/" rel="noopener noreferrer" target="_blank"><i className="icons fab fa-linkedin fa-3x"></i></a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=monika.intaite@gmail.com" rel="noopener noreferrer" target="_blank"><i className="icons fab fa-google-plus-square fa-3x"></i></a>
+        <a href="mailto:monika.intaite@gmail.com" rel="noopener noreferrer" target="_blank"><i className="icons far fa-envelope fa-3x"></i></a>
         <a href="https://github.com/monint578" rel="noopener noreferrer" target="_blank"><i className="icons fab fa-github-square fa-3x"></i></a>
       </div>
       <div className="show-for-mobile">
