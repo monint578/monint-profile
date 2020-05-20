@@ -9,15 +9,13 @@ const images = [
 
 const Toraberu = () => {
   return (
-    <div>
+    <div className="full-height">
       <a href="https://toraberu.herokuapp.com/" rel="noopener noreferrer" target="_blank" >
-        <h1 className="center pb">
-          toraberu.herokuapp.com
-        </h1>
+        <h1 className="center pb smaller-text">Toraberu</h1>
       </a>
-      <h3>
-        This project was created by remaking the YelpCamp project from the Udemy
-        course: The Web Developer Bootcamp.
+      <h3 className="smaller-text">
+        <em>Toraberu</em> – my personal project for sharing my most beloved places that I have visited. I wanted to challenge myself by designing a unique user interface. This project was created by remaking the YelpCamp project from the Udemy
+        course: The Web Developer Bootcamp. 
       </h3>
       <div className="carousel-container">
         <Slider
@@ -25,6 +23,7 @@ const Toraberu = () => {
             draggable: ">1",
             wrapAround: true,
             autoPlay: "4500",
+            fullscreen: true,
           }}
         >
           {images.map((image, index) => (
@@ -37,7 +36,7 @@ const Toraberu = () => {
       <hr />
       <div className="button-flex">
         <a className="button" href="https://toraberu.herokuapp.com/" rel="noopener noreferrer" target="_blank">
-          <span>Toraberu Page <i className="far fa-paper-plane"></i></span>
+          <span>Visit Toraberu <i className="fas fa-angle-double-right"></i></span>
           <div className="circle"></div>
         </a>
         <a className="button" href="https://github.com/monint578/toraberu" rel="noopener noreferrer" target="_blank">
@@ -45,7 +44,7 @@ const Toraberu = () => {
           <div className="circle"></div>
         </a>
         <a className="button" href="https://monint-yelpcamp.herokuapp.com/" rel="noopener noreferrer" target="_blank">
-          <span>YelpCamp Page <i className="far fa-paper-plane"></i></span>
+          <span>Visit YelpCamp <i className="fas fa-angle-double-right"></i></span>
           <div className="circle"></div>
         </a>
         <a className="button" href="https://github.com/monint578/yelp-camp" rel="noopener noreferrer" target="_blank">
@@ -60,7 +59,7 @@ const Toraberu = () => {
           <div className="icon-img">
             <img src="/img/express-seeklogo.png" alt="" />
           </div>
-          <div className="icon-img">
+          <div className="icon-img pl-sm">
             <img src="/img/mongodb-logo.png" alt="" />
           </div>
           <i className="fab fa-bootstrap icons fa-3x"></i>

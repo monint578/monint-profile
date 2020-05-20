@@ -3,19 +3,19 @@ import Accordion from "../Accordion";
 
 const Education = () => {
   return (
-      <div>
-        <h1 className="center pb">Education</h1>
+      <div className="full-height">
+        <h1 className="center pb smaller-text">Education</h1>
         <Accordion>
           <div className="accor active">
             <div className="accor-head">
-              <h3>Textile engineering bachelor degree</h3>
+              <h3 className="smaller-text-ed">Bachelor degree in Textile engineering</h3>
               <p className="light">
                 2015 - 2019 Kaunas Univeristy of Technology
               </p>
             </div>
             <div className="accor-body">
               <p>
-                Bachelor's topic "Analysis of the Production and Quality of
+              For four years I studied at Kaunas University of Technology. My bachelor's topic was "Analysis of the Production and Quality of
                 School Uniforms Produced in a Semi-regular Way". In my work I:
               </p>
               <p>
@@ -31,16 +31,14 @@ const Education = () => {
             </div>
           </div>
           <div className="accor active">
-            <div className="accor-head">
-              <h3>Student exchange program “Exasmus+”</h3>
+            <div className="accor-head pt-sm">
+              <h3>„Erasmus+“ – student exchange program</h3>
               <p className="light">2018 02 - 07</p>
             </div>
-            <div className="accor-body">
-              <p>
-                Studied one semester abroad at the University of West Attica in
-                Greece
+            <div className="accor-body content-grid">
+              <p>In 2018 I traveled to Greece where I studied one semester at the University of West Attica. It was one of my best student years where I got to travel, experience new cultures, and gained knowledge in my field, which I wouldn‘t have gained in Lithuania.
               </p>
-              <div className="img-greece pt"><img src="/img/greece.jpg" alt="" className="img"/></div>
+              <div className="accor-img-rec pt-sm"><img src="/img/greece.jpg" alt="" className="img"/></div>
               <img src="" alt=""/>
             </div>
           </div>

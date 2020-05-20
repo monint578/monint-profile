@@ -400,7 +400,7 @@ h6 {
     font-size: 0.67rem;
 }
 p {
-    font-size: 16px;
+    font-size: 18px;
 }
 .bold {
     font-weight: bold !important;
@@ -428,4 +428,13 @@ hr {
 }
 .pt {
     padding-top: 1rem;
+}
+.pt-sm {
+    padding-top: 0.5rem;
+}
+.pl {
+    padding-left: 1rem;
+}
+.pl-sm {
+    padding-left: 0.5rem;
 }
